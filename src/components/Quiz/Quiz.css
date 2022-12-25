@@ -1,0 +1,17 @@
+.quiz{
+    border: 1px solid gray;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.quiz-option{
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+
+    
+}

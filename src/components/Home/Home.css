@@ -1,0 +1,13 @@
+
+.quiz-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+
+}
+.quiz-container img{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+}
