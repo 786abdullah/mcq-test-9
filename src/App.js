@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Questions from './Questions/Questions';
+import ErrorPage from './components/ErrorPage/ErrorPage';
+import Blog from './components/Blog/Blog';
 
 
 function App() {
@@ -22,6 +24,14 @@ function App() {
         path:'/quiz/:id',
         loader: ({params})=> fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
         element:<Questions></Questions>
+      },
+      {
+        path:'/blog',
+        element:<Blog></Blog>
+      },
+      {
+        path:'*',
+        element:<ErrorPage></ErrorPage>
       }
     ]
   }
@@ -29,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
-      <h1>welcome for mcq test</h1>
+      {/* <h1>welcome for mcq test</h1> */}
     </div>
   );
 }

@@ -12,9 +12,10 @@ const QuizSubjects = ({ data  }) => {
 
     return (
         <div>
+            <br/><br/>
             <div className="">
                 <img src={logo} alt="" />
-                <h2>name:{name}</h2>
+                <h2>{name}</h2>
                 <h3>total:{total}</h3>
                 <button onClick={handleStartQuiz}>start quiz</button>
             </div>

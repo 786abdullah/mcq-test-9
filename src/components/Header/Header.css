@@ -1,6 +1,18 @@
+.header-main{
+    display: flex;
+    flex-direction: row ;
+     
+}
 .nav-btn{
     margin: 20px 20px 20px 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: larger;
+}
+.nav-container{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.logo-mane{
+    margin-left: 20px;
 }

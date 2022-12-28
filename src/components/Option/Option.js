@@ -1,6 +1,6 @@
 import React from 'react';
 import './Option.css'
-const Option = ({option}) => {
+const Option = ({option,data}) => {
     // console.log(option)
     return (
         <div className=''>

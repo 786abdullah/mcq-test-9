@@ -6,7 +6,7 @@ import './Home.css'
 
 const Home = () => {
    const mcqs = useLoaderData();
-//    console.log(mcqs)
+   console.log(mcqs);
    const {data}= mcqs;
    
     return (

@@ -10,15 +10,17 @@ const Questions = () => {
 
     return (
         <div>
-            <h2>questions here</h2>
+            <h2>{data.name}</h2>
             {
                 questions.map(ques => <Quiz
                 key={ques.id}
                 ques={ques}
+                data={data}
                 ></Quiz>)
             }
         </div>
     );
+    
 };
 
 export default Questions;

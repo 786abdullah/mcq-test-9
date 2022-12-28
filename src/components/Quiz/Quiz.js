@@ -1,10 +1,10 @@
 import React from 'react';
 import './Quiz.css'
 import Option from './../Option/Option';
-const Quiz = ({ques}) => {
+const Quiz = ({ques, data}) => {
 
     const {question,options} = ques;
-
+     console.log(ques);
     return (
         <div className='quiz-component'>
             <div className="quiz">
@@ -14,6 +14,7 @@ const Quiz = ({ques}) => {
                options.map( option => <Option
                 key={option.idx}
                 option={option}
+                data={data}
                ></Option>)
             }
             </div>
